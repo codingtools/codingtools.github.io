@@ -7,7 +7,7 @@
 
 module.exports = {
   title: 'CodingTools Documentation',
-  tagline: 'Documentation for codingtools',
+  tagline: 'Documentation for Coding Tools Utility',
   url: 'https://codingtools.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -21,10 +21,10 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        {to: 'docs/cdt/installation', label: 'Cdt Documentations', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/codingtools/codingtools.github.io',
+          href: 'https://github.com/codingtools/',
           label: 'GitHub',
           position: 'right',
         },
@@ -65,7 +65,7 @@ module.exports = {
         alt: 'Facebook Open Source Logo',
         src: 'https://docusaurus.io/img/oss_logo.png',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} CodingTools, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CodingTools`,
     },
   },
   presets: [

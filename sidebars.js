@@ -6,8 +6,14 @@
  */
 
 module.exports = {
-  docs: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+  // docs: {
+  //   Docusaurus: ['doc1', 'doc2', 'doc3'],
+  //   Features: ['mdx'],
+  // },
+
+  cdt: {
+    'Getting Started': ['cdt/installation'],
+    'Commands': ['cdt/commands/hash'],
+
   },
 };
