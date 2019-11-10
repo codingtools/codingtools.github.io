@@ -13,19 +13,30 @@ sidebar_label: Installation
 - [Node.js](https://nodejs.org/en/download/) version >= 8.0.0 or above (which can be checked by running `node -v`). You can use [nvm](https://github.com/nvm-sh/nvm) for managing multiple Node versions on a single machine installed
 - Using [Npm](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/en/) 
 
-### installation Using NPM
+### Installation Using NPM
 
-```sh-session
-$ npm install -g @codingtools/cdt
-$ cdt COMMAND
-running command...
+```bash
+ npm install -g @codingtools/cdt
 ```
 
-### installation Using Yarn
+### Installation Using Yarn
 
-```sh-session
-$ yarn global add @codingtools/cdt
-$ cdt COMMAND
-running command...
+```bash
+yarn global add @codingtools/cdt
 ```
 
+## Using Installers and Tarballs
+
+### using windows installer
+
+you can find windows installers for latest release [here](https://github.com/codingtools/cdt/releases)
+
+
+### using MacOs installer
+
+you can find MacOs installers for latest release [here](https://github.com/codingtools/cdt/releases)
+
+
+### using Ubuntu/Debian Packages
+
+will be available soon..
