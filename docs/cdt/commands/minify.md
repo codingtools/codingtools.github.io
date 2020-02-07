@@ -1,49 +1,68 @@
 ---
-id: hash
-title: Hash
-sidebar_label: Hash Command
+id: minify
+title: Minify
+sidebar_label: Minify
 ---
-### `cdt hash [STRING]`
+### `cdt minify [FILE]`
 
-Hashing functionality for a string/file
+Minify functionality for a string/file
 
 ``` bash
 USAGE
-  $ cdt hash [STRING]
+  $ cdt minify [FILE]
 
 OPTIONS
-  -f, --file=file      file to be hashed
-  -h, --help           show CLI help
-  -s, --string=string  string to be hashed
-  -t, --type=type      type of hash [SHA1(default), MD5, SHA256, SHA512, RMD160 or RIPEMD160]
+  -f, --file=file              file to be minified
+  -h, --help                   show CLI help
+  -o, --outputFile=outputFile  output file path
+
+  -t, --type=type              type of file to be minified, it will try to find type
+                               with extension supported: JS, HTML/HTM, CSS
+
 ```
-### Finding hash of a given string for default type ( SHA1 )
+### Minifying a file 
 ------
+> ( supported type: JS, HTML/HTM, CSS )
 ``` bash
-$ cdt hash 'abcde'
-✔  success   [SHA1] 03de6c570bfe24bfc328ccd7ca46b76eadaf4334
+$ cdt minify test.js
+ℹ  info      reading file: test.js
+ℹ  info      file type: JS
+✔ file: undefined minified
+✔  success   minified output:
+console.log("lorem ipsum");let x=10;x<10?console.log("x is less than: "+x):x>10?console.log("x is more than: "+x):console.log("x is equals to: "+x);
 ```
-* we can also use ***-s flag***
-
+* we can also use ***-f flag to pass file path***
 ``` bash
-$ cdt hash -s 'abcde'
-✔  success   [SHA1] 03de6c570bfe24bfc328ccd7ca46b76eadaf4334
+$ cdt minify -f test.js
+ℹ  info      reading file: test.js
+ℹ  info      file type: JS
+✔ file: undefined minified
+✔  success   minified output:
+console.log("lorem ipsum");let x=10;x<10?console.log("x is less than: "+x):x>10?console.log("x is more than: "+x):console.log("x is equals to: "+x);
 ```
-> Note: ***-s flag*** will override the string passed with argument
+> Note: ***-f flag*** will override the string file path passed with argument
 
-### Finding hash of a given string for any type e.g. MD5
+### Specifying file type
 ------
+> We can use  -t or --type flag  for passing type e.g. JS
 ``` bash
-$ cdt hash -t md5 'abcde'
-✔  success   [MD5] ab56b4d92b40713acc5af89985d4b786
+$ cdt minify -t js test.js
+ℹ  info      reading file: test.js
+ℹ  info      file type: JS
+✔ file: undefined minified
+✔  success   minified output:
+console.log("lorem ipsum");let x=10;x<10?console.log("x is less than: "+x):x>10?console.log("x is more than: "+x):console.log("x is equals to: "+x);
 ```
-
-> Note: Possible types SHA1(default), MD5, SHA256, SHA512, RMD160 or RIPEMD160
-
-### Finding hash of a given file for any type e.g. MD5
+> Note: If a invalid type is given ex. if HTML is given and file is JS, then we'll get an error.
+ 
+### Writing output to a file 
 ------
+> We can use -o or --output flag to pass output file path
 ``` bash
-$ cdt hash -t md5 -f ./file.txt
-✔  success   [MD5] ab56b4d92b40713acc5af89985d4b786
+cdt minify -f test.css -o output.css
+ℹ  info      reading file: test.css
+ℹ  info      file type: CSS
+✔ file: test/resources/test.css minified
+ℹ  info      Could not find file: output.css, creating new one
+✔  success   output written to file: output.css
 ```
-

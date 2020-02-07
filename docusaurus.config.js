@@ -21,7 +21,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/cdt/installation', label: 'Cdt Documentations', position: 'left'},
+        {to: 'docs/cdt/installation', label: 'Cdt Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/codingtools/',
