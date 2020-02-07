@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{155:function(i){i.exports=JSON.parse('{"id":"cdt/commands/minify","title":"Minify","sidebar_label":"Minify","description":"### `cdt minify [FILE]`","source":"@site/docs/cdt/commands/minify.md","permalink":"/docs/cdt/commands/minify","sidebar":"cdt","previous":{"title":"Hash","permalink":"/docs/cdt/commands/hash"}}')}}]);
