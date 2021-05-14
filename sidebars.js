@@ -13,7 +13,11 @@ module.exports = {
 
   cdt: {
     'Getting Started': ['cdt/installation'],
-    'Commands': ['cdt/commands/hash','cdt/commands/minify'],
+    'Commands': [
+      'cdt/commands/avro',
+      'cdt/commands/hash',
+      'cdt/commands/minify'
+    ],
 
   },
 };

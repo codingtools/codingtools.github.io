@@ -6,11 +6,11 @@
  */
 
 module.exports = {
-  title: 'CodingTools Documentation',
-  tagline: 'Documentation for Coding Tools Utility',
+  title: 'CodingTools',
+  tagline: 'Documentation @codingtools/cdt',
   url: 'https://codingtools.github.io',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon/favicon.ico',
   organizationName: 'codingtools', // Usually your GitHub org/user name.
   projectName: 'codingtools.github.io', // Usually your repo name.
   themeConfig: {
@@ -18,11 +18,14 @@ module.exports = {
       title: 'CodingTools',
       logo: {
         alt: 'CodingTools',
-        src: 'img/logo.svg',
+        src: 'img/cdt_docs_website.png',
+
       },
       links: [
-        {to: 'docs/cdt/installation', label: 'Cdt Docs', position: 'left'},
+        {to: 'docs/cdt/commands/avro', label: 'Docs', position: 'left'},
+        {to: 'docs/cdt/installation', label: 'Installation', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'Slack', label: 'Join Slack', position: 'right'},
         {
           href: 'https://github.com/codingtools/',
           label: 'GitHub',
@@ -38,7 +41,7 @@ module.exports = {
           items: [
             {
               label: 'Docs',
-              to: 'docs/doc1',
+              to: 'docs/cdt/installation',
             },
           ],
         },
@@ -46,8 +49,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Slack',
+              href: 'https://join.slack.com/t/codingtools/shared_invite/zt-qbls6zzm-ZN8VvlVTg3enPLUdw6yluA',
             },
           ],
         },
@@ -62,10 +65,10 @@ module.exports = {
         },
       ],
       logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'https://docusaurus.io/img/oss_logo.png',
+        alt: 'CodingTools',
+        // src: 'img/LogoMakr_logo2.png',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} CodingTools`,
+      copyright: `Copyright ©CodingTools, 2019-${new Date().getFullYear()}.`,
     },
   },
   presets: [

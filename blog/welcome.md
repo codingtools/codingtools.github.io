@@ -2,8 +2,8 @@
 id: welcome
 title: Welcome
 author: Ashish Patel
-authorTitle: Software Engineer at Deutsche Bank
-authorURL: https://github.com/ashishpatel0720
+authorTitle: Software Engineer
+authorURL: https://github.com/pateash
 authorImageURL: https://avatars0.githubusercontent.com/u/16856802?s=460&v=4
 authorTwitter: ashishpatel0720
 tags: [CodingTools, Welcome, Cdt]

@@ -1,11 +1,11 @@
 ---
 id: hash
-title: Hash
-sidebar_label: Hash
+title: hash
+sidebar_label: hash
 ---
 ### `cdt hash [STRING]`
 
-Hashing functionality for a string/file
+Hashing functionality, allows user to Hash String/File for all supported types. 
 
 ``` bash
 USAGE

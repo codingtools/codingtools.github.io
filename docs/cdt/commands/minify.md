@@ -1,11 +1,11 @@
 ---
 id: minify
-title: Minify
-sidebar_label: Minify
+title: minify
+sidebar_label: minify
 ---
 ### `cdt minify [FILE]`
 
-Minify functionality for a string/file
+Minify functionality, Allows user to minify supported file.
 
 ``` bash
 USAGE
